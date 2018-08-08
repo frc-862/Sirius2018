@@ -53,10 +53,10 @@ public class RobotMap {
         LiveWindow.addActuator("DriveTrain", "Right2", (VictorSP) driveTrainRight2);
         driveTrainRight2.setInverted(false);
         shooterFlyLeft = new CANTalon(5);
-        LiveWindow.addActuator("Shooter", "FlyLeft", shooterFlyLeft);
+//        LiveWindow.addActuator("Shooter", "FlyLeft", shooterFlyLeft);
         
         shooterFlyRight = new CANTalon(4);
-        LiveWindow.addActuator("Shooter", "FlyRight", shooterFlyRight);
+//        LiveWindow.addActuator("Shooter", "FlyRight", shooterFlyRight);
         
         shooterKicker = new DoubleSolenoid(11, 2, 3);
         LiveWindow.addActuator("Shooter", "Kicker", shooterKicker);

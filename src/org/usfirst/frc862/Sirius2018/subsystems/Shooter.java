@@ -11,6 +11,7 @@
 
 package org.usfirst.frc862.Sirius2018.subsystems;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
 import org.usfirst.frc862.Sirius2018.RobotMap;
 import org.usfirst.frc862.Sirius2018.commands.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -52,6 +53,24 @@ public class Shooter extends Subsystem {
     public void periodic() {
         // Put code here to be run every loop
 
+    }
+
+    public void spin() {
+        flyLeft.set(ControlMode.PercentOutput, 1);
+        flyRight.set(ControlMode.PercentOutput, -1);
+    }
+
+    public void stop() {
+        flyLeft.set(ControlMode.PercentOutput, 0);
+        flyRight.set(ControlMode.PercentOutput, 0);
+    }
+
+    public void kick() {
+        kicker.set(DoubleSolenoid.Value.kForward);
+    }
+
+    public void unkick() {
+        kicker.set(DoubleSolenoid.Value.kReverse);
     }
 
     // Put methods for controlling this subsystem

@@ -10,7 +10,7 @@ plugins {
 //}
 
 def TEAM = 862
-def ROBOT_CLASS = "org.usfirst.frc862.sirius.Robot"
+def ROBOT_CLASS = "org.usfirst.frc862.Sirius2018.Robot"
 
 // Define my targets (RoboRIO) and artifacts (deployable files)
 // This is added by GradleRIO's backing project EmbeddedTools.

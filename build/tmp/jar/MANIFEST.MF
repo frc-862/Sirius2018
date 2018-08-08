@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Robot-Class: org.usfirst.frc862.sirius.Robot
+Robot-Class: org.usfirst.frc862.Sirius2018.Robot
 Main-Class: edu.wpi.first.wpilibj.RobotBase
 
